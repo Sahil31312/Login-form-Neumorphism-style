@@ -28,12 +28,10 @@ Only one file is required:
    git clone https://github.com/yourusername/repository.git
     ```
 2. Open the file:
-    #### index.html
+   - index.html
 
 ## 🛠️ Technologies Used
 
-HTML5
-
-CSS3
-
-Font Awesome Icons (CDN)
+- HTML5
+- CSS3
+- Font Awesome Icons (CDN)
