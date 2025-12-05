@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #e0e5ec;
+        direction: rtl;
+        padding: 10px;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 500px;
+        padding: 15px 20px;
+        text-align: center;
+        background: #e0e5ec;
+        gap: 20px;
+        border-radius: 20px;
+        box-shadow: 10px 10px 20px #a3b1c6, -10px -10px 20px #ffffff;
+      }
+
+      .container h1 {
+        margin-bottom: 20px;
+      }
+
+      .container form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        align-items: center;
+      }
+
+      .container form .input {
+        width: 100%;
+        padding: 0 14px;
+        height: 30px;
+        font-size: 15px;
+        font-weight: 600;
+        border-radius: 20px;
+        border: none;
+        background: #e0e5ec;
+        box-shadow: inset 5px 5px 5px #bbc3cf, inset -5px -5px 10px #ffffff;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .container form .input:focus {
+        outline: none;
+        box-shadow: 10px 10px 20px #a3b1c6, -10px -10px 20px #ffffff;
+      }
+
+      .select {
+        color: rgb(114, 103, 103);
+        appearance: none;
+      }
+
+      .btn {
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 22px;
+        font-weight: 700;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background: #e0e5ec;
+        box-shadow: inset 5px 5px 5px #bbc3cf, inset -5px -5px 10px #ffffff;
+      }
+
+      .btn:active {
+        box-shadow: 10px 10px 20px #a3b1c6, -10px -10px 20px #ffffff;
+      }
+
+      .social {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        align-items: center;
+      }
+
+      .social-app {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 10px;
+        width: 100%;
+      }
+
+      .social-app i {
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 10px 10px 20px #a3b1c6, -10px -10px 20px #ffffff;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .social-app i:hover {
+        box-shadow: 2px 2px 2px #bbc3cf, -2px -2px 2px #ffffff;
+      }
+
+      .oldAccount a {
+        font-size: 14px;
+        text-decoration: none;
+        color: black;
+        padding: 3px 10px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 2px #bbc3cf, -2px -2px 2px #ffffff;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .oldAccount a:hover {
+        border-bottom: 2px greenyellow solid;
+        box-shadow: 10px 10px 20px #a3b1c6, -10px -10px 20px #ffffff;
+      }
+
+      /* Tablet */
+      @media (min-width: 601px) and (max-width: 1024px) {
+        .container {
+          max-width: 600px;
+        }
+        .container form .input {
+          font-size: 16px;
+          height: 35px;
+        }
+        .btn {
+          font-size: 24px;
+        }
+        .social-app i {
+          width: 50px;
+          height: 50px;
+          font-size: 24px;
+        }
+      }
+
+      /* Desktop */
+      @media (min-width: 1025px) {
+        .container {
+          max-width: 700px;
+        }
+        .container form .input {
+          font-size: 17px;
+          height: 40px;
+        }
+        .btn {
+          font-size: 25px;
+        }
+        .social-app i {
+          width: 55px;
+          height: 55px;
+          font-size: 25px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>راجستر</h1>
+      <form action="">
+        <input type="text" class="input" placeholder="نوم" />
+        <input type="text" class="input" placeholder="تخلص" />
+        <input type="email" class="input" placeholder="بریښنالیک" />
+        <select name="" id="" class="select input">
+          <option value="Gender" selected disabled>جنسیت انتخاب کړي</option>
+          <option value="Male">نارینه</option>
+          <option value="Female">ښځینه</option>
+          <option value="Other">هغه بل</option>
+        </select>
+
+        <input type="password" class="input" placeholder="پټ نوم" />
+        <input type="password" class="input" placeholder="پټ نوم تایید کړي" />
+
+        <!-- Button -->
+        <input type="submit" class="btn" value="ننوتل" />
+
+        <!--  -->
+        <div class="social">
+          <p>له دوي سره ننوتل</p>
+          <div class="social-app">
+            <i class="fa-brands fa-google" style="color: #041a35"></i>
+            <i class="fa-brands fa-facebook" style="color: #04346e"></i>
+            <i class="fa-brands fa-linkedin" style="color: #0f4eef"></i>
+            <i class="fa-brands fa-github"></i>
+          </div>
+        </div>
+
+        <p class="oldAccount"><a href="#">لا دمخه اکونټ لرم</a></p>
+      </form>
+    </div>
+  </body>
+</html>
